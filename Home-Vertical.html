@@ -44,87 +44,28 @@
         font-family: ziti;
     }
 
-    .Tip-Tool{
-        display: flex;
 
-        position: absolute;
-        top: 0px;
-        right: 0px;
-
-        font-size: 25px;
-        font-family: ziti;
-    }
-    .Tip-Tool-Home{
-        width: 100px;
-        height: 80px;
-        text-align: center;
-        line-height: 80px;
-        margin-right: 10px;
-        color: #FFD700;
-        border-bottom: 2px solid #FFD700;
-        border-top: 0px;
-        border-left: 0px;
-    }
-    .Tip-Tool-Background{
-        width: 130px;
-        height: 80px;
-        text-align: center;
-        line-height: 80px;
-        margin-right: 10px;
-        color: #ffffff;
-    }
-    .Tip-Tool-Aboutme{
-        width: 100px;
-        height: 80px;
-        text-align: center;
-        line-height: 80px;
-        margin-right: 10px;
-        color: #ffffff;
-    }
-    .Tip-Tool-Download{
-        width: 130px;
-        height: 80px;
-        text-align: center;
-        line-height: 80px;
-        margin-right: 10px;
-        color: #ffffff;
-    }
-    .Tip-Tool-Background:hover{
-        border-bottom: 2px solid #FFD700;
-        border-top: 0px;
-        border-left: 0px;
-    }
-    .Tip-Tool-Aboutme:hover{
-        border-bottom: 2px solid #FFD700;
-        border-top: 0px;
-        border-left: 0px;
-    }
-    .Tip-Tool-Download:hover{
-        border-bottom: 2px solid #FFD700;
-        border-top: 0px;
-        border-left: 0px;
-    }
 
     .one-title{
         width: 100%;
         text-align: center;
-        font-size: 60px;
+        font-size: 40px;
         color: #ffffff;
         font-family: ziti;
-        margin-top: 150px;
+        margin-top: 50px;
         position: absolute;
     }
     .one-MyComputer{
         max-width: 50%;
         max-height: 50%;
-        margin-top: 250px;
+        margin-top: 150px;
         margin-left: 50%;
         transform: translate(-50%, 0%);
     }
     .one-end{
         width: 100%;
         text-align: center;
-        font-size: 40px;
+        font-size: 20px;
         color: #ffffff;
         font-family: ziti;
         margin-top: 15px;
@@ -137,32 +78,32 @@
     .aboutme-title{
         width: 100%;
         text-align: center;
-        font-size: 55px;
+        font-size: 40px;
         color: #ffffff;
         font-family: ziti;
         position: absolute;
-        top: 150px;
+        top: 120px;
     }
     .aboutme-platform{
         width: auto;
         display: block;
         position: absolute;
-        top: 220px;
-        left: 50%;
+        top: 180px;
+        left: 70%;
         transform: translate(-50%, 0%);
         z-index: 1;
     }
     .Kwai,.TikTok,.BilBil{
         width: 300px;
-        margin-top: 20px;
+        margin-top: 5px;
     }
     .Kwai-img,.TikTok-img,.BilBil-img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
     .Kwai-title,.TikTok-title,.BilBil-title{
-        line-height: 100px;
-        font-size: 50px;
+        line-height: 80px;
+        font-size: 20px;
         color: #ffffff;
         font-family: ziti;
         margin-left: 0px;
@@ -175,18 +116,18 @@
     .notice-title{
         width: 100%;
         text-align: center;
-        font-size: 55px;
+        font-size: 40px;
         color: #ffffff;
         font-family: ziti;
         position: absolute;
-        top: 640px;
+        top: 550px;
     }
     .notice-all{
         width: auto;
         height: 300px;
         background: rgba(255, 255, 255, 0.5);
         position: relative;
-        top: 720px;
+        top: 610px;
         margin-left: 10%;
         margin-right: 10%;
         border: 0px solid transparent;
@@ -194,20 +135,90 @@
 
         color: #ffffff;
         font-family: ziti;
+        font-size: 10px;
+    }
+    .dropbtn {
+        height: 70px;
+        width: 150px;
+        background-color: #93b5cf;
+        padding-right: 10px;
+        line-height: 70px;
+        color: white;
+        font-size: 20px;
+        font-family: ziti;
+        border: none;
+        cursor: pointer;
+        border: 0px solid transparent;
+        border-radius: 10px;
+    }
+    
+    /* 容器 <div> - 需要定位下拉内容 */
+    .dropdown {
+        margin-left: 10%;
+        margin-top: 20%;
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* 下拉内容 (默认隐藏) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    /* 下拉菜单的链接 */
+    .dropdown-content div {
+        color: black;
+        text-align: center;
+        font-family: ziti;
+        font-size: 1.2rem;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* 鼠标移上去后修改下拉菜单链接颜色 */
+    .dropdown-content div:hover {background-color: #f1f1f1}
+    
+    /* 在鼠标移上去后显示下拉菜单 */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    /* 当下拉内容显示后修改下拉按钮的背景颜色 */
+    .dropdown:hover .dropbtn {
+        background-color: #7ea7c7;
+    }
+
+    .icon{
+        height: 2.5rem;
+        width: auto;
+        margin-left: 15px;
+        margin-top: 15px;
+        float: left;
     }
 </style>
 <body>
     <div class="box">
         <div class="Top">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <svg t="1707614570195" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4229" width="200" height="200"><path d="M458.496 843.776c-214.528 0-389.12-174.592-389.12-389.12s174.592-389.12 389.12-389.12 389.12 174.592 389.12 389.12-174.592 389.12-389.12 389.12z m0-716.8c-180.736 0-327.68 146.944-327.68 327.68s146.944 327.68 327.68 327.68 327.68-146.944 327.68-327.68-146.944-327.68-327.68-327.68z" fill="#000000" p-id="4230"></path><path d="M688.384 429.056c-13.568 0-26.112-8.96-29.696-22.784-20.736-78.08-82.688-137.984-161.28-156.16-16.64-3.84-26.88-20.224-23.04-36.864s20.224-26.88 36.864-23.04c101.12 23.296 180.224 100.096 206.848 200.192 4.352 16.384-5.376 33.28-21.76 37.632-2.56 0.768-5.12 1.024-7.936 1.024zM929.28 964.864c-7.424 0-14.848-2.56-20.736-8.192l-228.352-210.432c-12.544-11.52-13.312-30.976-1.792-43.52s30.976-13.312 43.52-1.792l228.352 210.432c12.544 11.52 13.312 30.976 1.792 43.52-6.144 6.656-14.336 9.984-22.784 9.984z" fill="#000000" p-id="4231"></path></svg>
+                选择</button>
+                <div class="dropdown-content">
+                    <div>首页</div>
+                    <div>精选壁纸</div>
+                    <div>资源下载</div>
+                    <div>关于我</div>
+                </div>
+            </div>
             <div class="Tip-ico">
                 <a href="./Home-Vertical.html"><img src="./dog.ico" class="Top-ico-Logo"></a>
                 <a href="./Home-Vertical.html"><h1 class="Top-ico-title">江涛玩电脑官网</h1></a>
-            </div>
-            <div class="Tip-Tool">
-                <a class="Tip-Tool-Home" href="./Home-Vertical.html">首页</a>
-                <a class="Tip-Tool-Background" href="#">精选壁纸</a>
-                <a class="Tip-Tool-Download" href="#">资源下载</a>
-                <a class="Tip-Tool-Aboutme" href="#">关于我</a>
             </div>
         </div>
 
