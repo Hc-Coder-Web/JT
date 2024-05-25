@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <link rel="icon" href="./img/dog.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江涛玩电脑官网</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background: url("https://img1.wallspic.com/crops/4/0/0/5/5/155004/155004-jian_yue-sheng_tai_qu-zi_luo_lan_se-yi_shu-pin_hong_se-1920x1080.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    @font-face {
+        font-family: ziti;
+        src: url("./zt.ttf")
+    }
+
+    .Tip-ico {
+        display: flex;
+
+        position: absolute;
+        top: 15px;
+        left: 120px;
+    }
+
+    .Top-ico-Logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .Top-ico-title {
+        font-size: 25px;
+        line-height: 45px;
+        margin-left: 8px;
+        color: #ffffff;
+        font-family: ziti;
+    }
+
+    .choose {
+        background-color: #fff;
+        border-radius: 20px;
+        width: 500px;
+        height: 350px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .choose-Title{
+        text-align: center;
+        font-family: ziti;
+        margin-top: 20px;
+    }
+    button{
+        background-color:dodgerblue;
+	    color:white;
+	    width: 300px;
+	    height: 80px;
+	    border:0;
+        font-family: ziti;
+	    font-size: 24px;			
+        border-radius: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        left: 20%;
+    }
+    h2{
+        font-size: 15px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="Tip-ico">
+            <img src="./img/dog.ico" class="Top-ico-Logo">
+            <h1 class="Top-ico-title">江涛玩电脑官网</h1>
+        </div>
+        <div class="choose">
+            <h1 class="choose-Title">请选择你要浏览的页面</h1>
+            <button onclick="window.location.href='./Home-Transverse.html'">横屏版（电脑版）</button>
+            <button onclick="window.location.href='./Home-Vertical.html'">竖屏版（手机版）</button>
+            <h2>请选择适配的页面，避免造成组件位置错位影响使用</h2>
+        </div>
+    </div>
+</body>
+
+</html>

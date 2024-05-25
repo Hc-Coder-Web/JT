@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <link rel = "icon" href = "./img/dog.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江涛玩电脑官网</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        background: url("https://img1.wallspic.com/crops/4/0/0/5/5/155004/155004-jian_yue-sheng_tai_qu-zi_luo_lan_se-yi_shu-pin_hong_se-1920x1080.jpg");
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-size:100% 100%;
+    }
+    @font-face {
+		font-family: ziti;
+		src: url("./zt.ttf")
+	}
+    a{
+        text-decoration: none;
+    }
+
+    .Tip-ico{
+        display: flex;
+
+        position: absolute;
+        top: 15px;
+        left: 120px;
+    }
+    .Top-ico-Logo{
+        width: 45px;
+        height: 45px;
+    }
+    .Top-ico-title{
+        font-size: 25px;
+        line-height: 45px;
+        margin-left: 8px;
+        color: #ffffff;
+        font-family: ziti;
+    }
+
+
+
+    .one-title{
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        color: #ffffff;
+        font-family: ziti;
+        margin-top: 50px;
+        position: absolute;
+    }
+    .one-MyComputer{
+        max-width: 50%;
+        max-height: 50%;
+        margin-top: 150px;
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .one-end{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: ziti;
+        margin-top: 15px;
+        position: absolute;
+    }
+
+    .aboutme{
+        position: relative;
+    }
+    .aboutme-title{
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        color: #ffffff;
+        font-family: ziti;
+        position: absolute;
+        top: 120px;
+    }
+    .aboutme-platform{
+        width: auto;
+        display: block;
+        position: absolute;
+        top: 180px;
+        left: 70%;
+        transform: translate(-50%, 0%);
+        z-index: 1;
+    }
+    .Kwai,.BilBil{
+        width: 300px;
+        margin-top: 5px;
+    }
+    .Kwai-img,.BilBil-img{
+        width: 80px;
+        height: 80px;
+    }
+    .Kwai-title,.BilBil-title{
+        line-height: 80px;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: ziti;
+        margin-left: 0px;
+        position: absolute;
+    }
+
+    .notice{
+        position: relative;
+    }
+    .notice-title{
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        color: #ffffff;
+        font-family: ziti;
+        position: absolute;
+        top: 480px;
+    }
+    .notice-all{
+        width: auto;
+        height: 300px;
+        background: rgba(227, 253, 253, 0.5);
+        position: relative;
+        top: 540px;
+        margin-left: 10%;
+        margin-right: 10%;
+        border: 0px solid transparent;
+        border-radius: 20px;
+
+        color: #ffffff;
+        font-family: ziti;
+        font-size: 10px;
+    }
+    .dropbtn {
+        height: 70px;
+        width: 150px;
+        background-color: #93b5cf;
+        padding-right: 10px;
+        line-height: 70px;
+        color: white;
+        font-size: 20px;
+        font-family: ziti;
+        border: none;
+        cursor: pointer;
+        border: 0px solid transparent;
+        border-radius: 10px;
+    }
+    
+    /* 容器 <div> - 需要定位下拉内容 */
+    .dropdown {
+        margin-left: 10%;
+        margin-top: 20%;
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* 下拉内容 (默认隐藏) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    /* 下拉菜单的链接 */
+    .dropdown-content div {
+        color: black;
+        text-align: center;
+        font-family: ziti;
+        font-size: 1.2rem;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* 鼠标移上去后修改下拉菜单链接颜色 */
+    .dropdown-content div:hover {background-color: #f1f1f1}
+    
+    /* 在鼠标移上去后显示下拉菜单 */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    /* 当下拉内容显示后修改下拉按钮的背景颜色 */
+    .dropdown:hover .dropbtn {
+        background-color: #7ea7c7;
+    }
+
+    .icon{
+        height: 2.5rem;
+        width: auto;
+        margin-left: 15px;
+        margin-top: 15px;
+        float: left;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="Top">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <svg t="1707614570195" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4229" width="200" height="200"><path d="M458.496 843.776c-214.528 0-389.12-174.592-389.12-389.12s174.592-389.12 389.12-389.12 389.12 174.592 389.12 389.12-174.592 389.12-389.12 389.12z m0-716.8c-180.736 0-327.68 146.944-327.68 327.68s146.944 327.68 327.68 327.68 327.68-146.944 327.68-327.68-146.944-327.68-327.68-327.68z" fill="#000000" p-id="4230"></path><path d="M688.384 429.056c-13.568 0-26.112-8.96-29.696-22.784-20.736-78.08-82.688-137.984-161.28-156.16-16.64-3.84-26.88-20.224-23.04-36.864s20.224-26.88 36.864-23.04c101.12 23.296 180.224 100.096 206.848 200.192 4.352 16.384-5.376 33.28-21.76 37.632-2.56 0.768-5.12 1.024-7.936 1.024zM929.28 964.864c-7.424 0-14.848-2.56-20.736-8.192l-228.352-210.432c-12.544-11.52-13.312-30.976-1.792-43.52s30.976-13.312 43.52-1.792l228.352 210.432c12.544 11.52 13.312 30.976 1.792 43.52-6.144 6.656-14.336 9.984-22.784 9.984z" fill="#000000" p-id="4231"></path></svg>
+                选择</button>
+                <div class="dropdown-content">
+                    <a href="./Home-Vertical.html"><div style="color: #FFD700;">首页</div></a>
+                    <a href="#"><div>精选壁纸</div></a>
+                    <a href="#"></a><div>资源下载</div></a>
+                    <a href="#"></a><div>关于我</div></a>
+                </div>
+            </div>
+            <div class="Tip-ico">
+                <a href="./Home-Vertical.html"><img src="./img/dog.ico" class="Top-ico-Logo"></a>
+                <a href="./Home-Vertical.html"><h1 class="Top-ico-title">江涛玩电脑官网</h1></a>
+            </div>
+        </div>
+
+        <div class="Body">
+            <div class="one">
+                <h1 class="one-title">欢迎来到江涛玩电脑官网</h1>
+                <img src="./img/MyComputer.png" class="one-MyComputer">
+                <h1 class="one-end">本人电脑配置不高，创造神话</h1>
+            </div>
+        </div>
+
+        <div class="aboutme">
+            <h1 class="aboutme-title">我的账号</h1>
+            <div class="aboutme-platform">
+                <div class="Kwai">
+                    <a href="https://www.kuaishou.com/profile/3x7dv4gxvdc4f64"><img src="./img/Kwai.ico" class="Kwai-img"></a>
+                    <a href="https://www.kuaishou.com/profile/3x7dv4gxvdc4f64" class="Kwai-title">快手端</a>
+                </div>
+                <div class="BilBil">
+                    <a href="https://space.bilibili.com/2120788527"><img src="./img/BilBil.ico" class="BilBil-img"></a>
+                    <a href="https://space.bilibili.com/2120788527" class="BilBil-title">B站端</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="notice">
+            <h1 class="notice-title">公告</h1>
+            <div class="notice-all">
+                <h1>1.欢迎浏览我的网站</h1>
+                <h1>2.制作不易，麻烦点个关注吧</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
